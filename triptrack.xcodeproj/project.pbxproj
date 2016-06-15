@@ -1,0 +1,612 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A92466C31D11BE3C005C39C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92466C21D11BE3C005C39C1 /* AppDelegate.swift */; };
+		A92466C51D11BE3C005C39C1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92466C41D11BE3C005C39C1 /* ViewController.swift */; };
+		A92466C81D11BE3C005C39C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A92466C61D11BE3C005C39C1 /* Main.storyboard */; };
+		A92466CA1D11BE3C005C39C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A92466C91D11BE3C005C39C1 /* Assets.xcassets */; };
+		A92466CD1D11BE3C005C39C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A92466CB1D11BE3C005C39C1 /* LaunchScreen.storyboard */; };
+		A92466D21D11BE3C005C39C1 /* triptrack WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = A92466D11D11BE3C005C39C1 /* triptrack WatchKit App.app */; };
+		A92466D81D11BE3C005C39C1 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A92466D61D11BE3C005C39C1 /* Interface.storyboard */; };
+		A92466DA1D11BE3C005C39C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A92466D91D11BE3C005C39C1 /* Assets.xcassets */; };
+		A92466E11D11BE3D005C39C1 /* triptrack WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A92466E01D11BE3D005C39C1 /* triptrack WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A92466E81D11BE3D005C39C1 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92466E71D11BE3D005C39C1 /* InterfaceController.swift */; };
+		A92466EA1D11BE3D005C39C1 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92466E91D11BE3D005C39C1 /* ExtensionDelegate.swift */; };
+		A92466EC1D11BE3D005C39C1 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92466EB1D11BE3D005C39C1 /* NotificationController.swift */; };
+		A92466EE1D11BE3D005C39C1 /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92466ED1D11BE3D005C39C1 /* GlanceController.swift */; };
+		A92466F01D11BE3D005C39C1 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92466EF1D11BE3D005C39C1 /* ComplicationController.swift */; };
+		A92466F21D11BE3D005C39C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A92466F11D11BE3D005C39C1 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A92466D31D11BE3C005C39C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A92466B71D11BE3C005C39C1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A92466D01D11BE3C005C39C1;
+			remoteInfo = "triptrack WatchKit App";
+		};
+		A92466E21D11BE3D005C39C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A92466B71D11BE3C005C39C1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A92466DF1D11BE3D005C39C1;
+			remoteInfo = "triptrack WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A92466F91D11BE3D005C39C1 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A92466E11D11BE3D005C39C1 /* triptrack WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A92466FD1D11BE3D005C39C1 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				A92466D21D11BE3C005C39C1 /* triptrack WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A92466BF1D11BE3C005C39C1 /* triptrack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = triptrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A92466C21D11BE3C005C39C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A92466C41D11BE3C005C39C1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A92466C71D11BE3C005C39C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A92466C91D11BE3C005C39C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A92466CC1D11BE3C005C39C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A92466CE1D11BE3C005C39C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A92466D11D11BE3C005C39C1 /* triptrack WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "triptrack WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A92466D71D11BE3C005C39C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		A92466D91D11BE3C005C39C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A92466DB1D11BE3D005C39C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A92466E01D11BE3D005C39C1 /* triptrack WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "triptrack WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A92466E61D11BE3D005C39C1 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		A92466E71D11BE3D005C39C1 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		A92466E91D11BE3D005C39C1 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		A92466EB1D11BE3D005C39C1 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		A92466ED1D11BE3D005C39C1 /* GlanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlanceController.swift; sourceTree = "<group>"; };
+		A92466EF1D11BE3D005C39C1 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		A92466F11D11BE3D005C39C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A92466F31D11BE3D005C39C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A92466BC1D11BE3C005C39C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A92466DD1D11BE3D005C39C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A92466B61D11BE3C005C39C1 = {
+			isa = PBXGroup;
+			children = (
+				A92466C11D11BE3C005C39C1 /* triptrack */,
+				A92466D51D11BE3C005C39C1 /* triptrack WatchKit App */,
+				A92466E41D11BE3D005C39C1 /* triptrack WatchKit Extension */,
+				A92466C01D11BE3C005C39C1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A92466C01D11BE3C005C39C1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A92466BF1D11BE3C005C39C1 /* triptrack.app */,
+				A92466D11D11BE3C005C39C1 /* triptrack WatchKit App.app */,
+				A92466E01D11BE3D005C39C1 /* triptrack WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A92466C11D11BE3C005C39C1 /* triptrack */ = {
+			isa = PBXGroup;
+			children = (
+				A92466C21D11BE3C005C39C1 /* AppDelegate.swift */,
+				A92466C41D11BE3C005C39C1 /* ViewController.swift */,
+				A92466C61D11BE3C005C39C1 /* Main.storyboard */,
+				A92466C91D11BE3C005C39C1 /* Assets.xcassets */,
+				A92466CB1D11BE3C005C39C1 /* LaunchScreen.storyboard */,
+				A92466CE1D11BE3C005C39C1 /* Info.plist */,
+			);
+			path = triptrack;
+			sourceTree = "<group>";
+		};
+		A92466D51D11BE3C005C39C1 /* triptrack WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				A92466D61D11BE3C005C39C1 /* Interface.storyboard */,
+				A92466D91D11BE3C005C39C1 /* Assets.xcassets */,
+				A92466DB1D11BE3D005C39C1 /* Info.plist */,
+			);
+			path = "triptrack WatchKit App";
+			sourceTree = "<group>";
+		};
+		A92466E41D11BE3D005C39C1 /* triptrack WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A92466E71D11BE3D005C39C1 /* InterfaceController.swift */,
+				A92466E91D11BE3D005C39C1 /* ExtensionDelegate.swift */,
+				A92466EB1D11BE3D005C39C1 /* NotificationController.swift */,
+				A92466ED1D11BE3D005C39C1 /* GlanceController.swift */,
+				A92466EF1D11BE3D005C39C1 /* ComplicationController.swift */,
+				A92466F11D11BE3D005C39C1 /* Assets.xcassets */,
+				A92466F31D11BE3D005C39C1 /* Info.plist */,
+				A92466E51D11BE3D005C39C1 /* Supporting Files */,
+			);
+			path = "triptrack WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		A92466E51D11BE3D005C39C1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A92466E61D11BE3D005C39C1 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A92466BE1D11BE3C005C39C1 /* triptrack */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A92466FE1D11BE3D005C39C1 /* Build configuration list for PBXNativeTarget "triptrack" */;
+			buildPhases = (
+				A950209C1D11C22E00A0035B /* Check License */,
+				A92466BB1D11BE3C005C39C1 /* Sources */,
+				A92466BC1D11BE3C005C39C1 /* Frameworks */,
+				A92466BD1D11BE3C005C39C1 /* Resources */,
+				A92466FD1D11BE3D005C39C1 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A92466D41D11BE3C005C39C1 /* PBXTargetDependency */,
+			);
+			name = triptrack;
+			productName = triptrack;
+			productReference = A92466BF1D11BE3C005C39C1 /* triptrack.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A92466D01D11BE3C005C39C1 /* triptrack WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A92466FA1D11BE3D005C39C1 /* Build configuration list for PBXNativeTarget "triptrack WatchKit App" */;
+			buildPhases = (
+				A92466CF1D11BE3C005C39C1 /* Resources */,
+				A92466F91D11BE3D005C39C1 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A92466E31D11BE3D005C39C1 /* PBXTargetDependency */,
+			);
+			name = "triptrack WatchKit App";
+			productName = "triptrack WatchKit App";
+			productReference = A92466D11D11BE3C005C39C1 /* triptrack WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		A92466DF1D11BE3D005C39C1 /* triptrack WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A92466F61D11BE3D005C39C1 /* Build configuration list for PBXNativeTarget "triptrack WatchKit Extension" */;
+			buildPhases = (
+				A950209D1D11C25C00A0035B /* Check License */,
+				A92466DC1D11BE3D005C39C1 /* Sources */,
+				A92466DD1D11BE3D005C39C1 /* Frameworks */,
+				A92466DE1D11BE3D005C39C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "triptrack WatchKit Extension";
+			productName = "triptrack WatchKit Extension";
+			productReference = A92466E01D11BE3D005C39C1 /* triptrack WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A92466B71D11BE3C005C39C1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Antonio Marques";
+				TargetAttributes = {
+					A92466BE1D11BE3C005C39C1 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					A92466D01D11BE3C005C39C1 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					A92466DF1D11BE3D005C39C1 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = A92466BA1D11BE3C005C39C1 /* Build configuration list for PBXProject "triptrack" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A92466B61D11BE3C005C39C1;
+			productRefGroup = A92466C01D11BE3C005C39C1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A92466BE1D11BE3C005C39C1 /* triptrack */,
+				A92466D01D11BE3C005C39C1 /* triptrack WatchKit App */,
+				A92466DF1D11BE3D005C39C1 /* triptrack WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A92466BD1D11BE3C005C39C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A92466CD1D11BE3C005C39C1 /* LaunchScreen.storyboard in Resources */,
+				A92466CA1D11BE3C005C39C1 /* Assets.xcassets in Resources */,
+				A92466C81D11BE3C005C39C1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A92466CF1D11BE3C005C39C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A92466DA1D11BE3C005C39C1 /* Assets.xcassets in Resources */,
+				A92466D81D11BE3C005C39C1 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A92466DE1D11BE3D005C39C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A92466F21D11BE3D005C39C1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A950209C1D11C22E00A0035B /* Check License */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check License";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "common/checklicense.sh common/RemainPermissiveLicense.m .";
+		};
+		A950209D1D11C25C00A0035B /* Check License */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check License";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "common/checklicense.sh common/RemainPermissiveLicense.m .";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A92466BB1D11BE3C005C39C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A92466C51D11BE3C005C39C1 /* ViewController.swift in Sources */,
+				A92466C31D11BE3C005C39C1 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A92466DC1D11BE3D005C39C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A92466EC1D11BE3D005C39C1 /* NotificationController.swift in Sources */,
+				A92466EA1D11BE3D005C39C1 /* ExtensionDelegate.swift in Sources */,
+				A92466F01D11BE3D005C39C1 /* ComplicationController.swift in Sources */,
+				A92466E81D11BE3D005C39C1 /* InterfaceController.swift in Sources */,
+				A92466EE1D11BE3D005C39C1 /* GlanceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A92466D41D11BE3C005C39C1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A92466D01D11BE3C005C39C1 /* triptrack WatchKit App */;
+			targetProxy = A92466D31D11BE3C005C39C1 /* PBXContainerItemProxy */;
+		};
+		A92466E31D11BE3D005C39C1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A92466DF1D11BE3D005C39C1 /* triptrack WatchKit Extension */;
+			targetProxy = A92466E21D11BE3D005C39C1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A92466C61D11BE3C005C39C1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A92466C71D11BE3C005C39C1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A92466CB1D11BE3C005C39C1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A92466CC1D11BE3C005C39C1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A92466D61D11BE3C005C39C1 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A92466D71D11BE3C005C39C1 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A92466F41D11BE3D005C39C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A92466F51D11BE3D005C39C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A92466F71D11BE3D005C39C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "triptrack WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = am.triptrack.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		A92466F81D11BE3D005C39C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "triptrack WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = am.triptrack.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+		A92466FB1D11BE3D005C39C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = triptrack_WatchKit_Extension;
+				INFOPLIST_FILE = "triptrack WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = am.triptrack.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		A92466FC1D11BE3D005C39C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = triptrack_WatchKit_Extension;
+				INFOPLIST_FILE = "triptrack WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = am.triptrack.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+		A92466FF1D11BE3D005C39C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = triptrack/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = am.triptrack;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A92467001D11BE3D005C39C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = triptrack/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = am.triptrack;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A92466BA1D11BE3C005C39C1 /* Build configuration list for PBXProject "triptrack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A92466F41D11BE3D005C39C1 /* Debug */,
+				A92466F51D11BE3D005C39C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A92466F61D11BE3D005C39C1 /* Build configuration list for PBXNativeTarget "triptrack WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A92466F71D11BE3D005C39C1 /* Debug */,
+				A92466F81D11BE3D005C39C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A92466FA1D11BE3D005C39C1 /* Build configuration list for PBXNativeTarget "triptrack WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A92466FB1D11BE3D005C39C1 /* Debug */,
+				A92466FC1D11BE3D005C39C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A92466FE1D11BE3D005C39C1 /* Build configuration list for PBXNativeTarget "triptrack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A92466FF1D11BE3D005C39C1 /* Debug */,
+				A92467001D11BE3D005C39C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A92466B71D11BE3C005C39C1 /* Project object */;
+}
